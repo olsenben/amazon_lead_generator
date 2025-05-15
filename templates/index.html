@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon Product Leads</title>
+  <style>
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background: #eee; }
+  </style>
+</head>
+<body>
+  <h1>Amazon Product Leads</h1>
+  <a href="/refresh">
+    <button>🔄 Refresh Data</button>
+  </a>
+
+  {% if products %}
+    <table>
+      <thead>
+        <tr>
+          {% for key in products[0].keys() %}
+            <th>{{ key }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for product in products %}
+          <tr>
+            {% for value in product.values() %}
+              <td>{{ value }}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No data available.</p>
+  {% endif %}
+</body>
+</html>

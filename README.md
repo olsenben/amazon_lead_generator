@@ -9,3 +9,6 @@ Finding new clients is laborious. I have 2 VAs browsing Amazon looking for produ
 
 ## Method
 I use Keepa API to load a custom product query then use scrapeops to scrape the ASIN pages looking for the brand storefront, then filter out those results. I have not optimzed this code in the slightest and the runtime is about 10-20 minutes depending on how many products I request but it sure beats the weeks time it usually takes to build a lead list by hand. Previously we would build a lead least of 100 leads a week and maybe only about half of them we usable. Now I can generate the same amount of leads of the same quality in about 15 minutes where it previously took a week. Cold emailing still sucks though, and brand contact info still needs to be added by hand. Maybe I'll address that in the future. 
+
+## Deployment
+Current implementation is a flask app. I plan to deploy it in the future for my VAs to use. 
