@@ -27,7 +27,13 @@
         {% for product in products %}
           <tr>
             {% for value in product.values() %}
-              <td>{{ value }}</td>
+              <td>
+                {% if value is string and (value.startswith('http://') or value.startswith('https://')) %}
+                    <a href="{{ value }}" target="_blank">{{ value }}</a>
+                {% else %}
+                    {{ value }}
+                {% endif %}
+            </td>
             {% endfor %}
           </tr>
         {% endfor %}
