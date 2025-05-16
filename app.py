@@ -2,17 +2,16 @@ from flask import Flask, render_template, url_for, redirect
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
 import os
-import pandas as pd
 import json
-from lead_scraper_script import run_request
+from product_data import run_request
 
 
 load_dotenv()
 
 #load api keys
 keepa_api_key= os.getenv("KEEPA_API_KEY")
-scrapeops_api_key = os.getenv("SCRAPEOPS_API_KEY")
-scrapeops_url = 'https://proxy.scrapeops.io/v1/'
+# scrapeops_api_key = os.getenv("SCRAPEOPS_API_KEY")
+# scrapeops_url = 'https://proxy.scrapeops.io/v1/'
 
 app = Flask(__name__)
 CACHE_PATH = "cached_results.json"
@@ -26,11 +25,16 @@ def load_query_parameters():
         print('Error Loading Query Parameters File')
         return None
     
+def save_to_json(json_string, filename):
+    with open(filename, "w", encoding='utf-8') as file:
+        json.dump(json_string, file, indent=4)
+    print("data saved")
+    
 def fetch_and_cache_data():
     print("Refreshing...")
     query_parameters = load_query_parameters()
-    df = run_request(keepa_api_key, query_parameters, scrapeops_api_key, scrapeops_url)
-    df.to_json(CACHE_PATH, orient='records', indent=4)
+    data = run_request(keepa_api_key, query_parameters)
+    save_to_json(data, CACHE_PATH)
     print("Parsing complete")
 
 @app.route('/')
@@ -39,7 +43,7 @@ def index():
         with open(CACHE_PATH, "r") as file:
             products = json.load(file)
     else:
-        products = []
+        products = {}
     return render_template('index.html', products=products)
 
 @app.route('/refresh')

@@ -1,70 +1,62 @@
-[
-    {
-        "asinList":"B002G24HD6",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B002G24HD6"
+{
+    "B002G24HD6": {
+        "brand": "Wonka",
+        "url": "https://www.amazon.com/dp/B002G24HD6"
     },
-    {
-        "asinList":"B00K80KTR6",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B00K80KTR6"
+    "B00K80KTR6": {
+        "brand": "Mill-Rose",
+        "url": "https://www.amazon.com/dp/B00K80KTR6"
     },
-    {
-        "asinList":"B000WMCEKK",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B000WMCEKK"
+    "B0033PEEDI": {
+        "brand": "Coats & Clark Bulk Buy",
+        "url": "https://www.amazon.com/dp/B0033PEEDI"
     },
-    {
-        "asinList":"B0033PEEDI",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B0033PEEDI"
+    "B0CJ7P9LBN": {
+        "brand": "Pokemon",
+        "url": "https://www.amazon.com/dp/B0CJ7P9LBN"
     },
-    {
-        "asinList":"B0CJ7P9LBN",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B0CJ7P9LBN"
+    "B00I200OBK": {
+        "brand": "Nike",
+        "url": "https://www.amazon.com/dp/B00I200OBK"
     },
-    {
-        "asinList":"B000E1VOMI",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B000E1VOMI"
+    "B000WMCEKK": {
+        "brand": "Ortofon",
+        "url": "https://www.amazon.com/dp/B000WMCEKK"
     },
-    {
-        "asinList":"B00PKJ68H0",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B00PKJ68H0"
+    "B0053A4FUI": {
+        "brand": "Gutermann",
+        "url": "https://www.amazon.com/dp/B0053A4FUI"
     },
-    {
-        "asinList":"B0053A4FUI",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B0053A4FUI"
+    "B00DX86P5K": {
+        "brand": "ChiaoGoo",
+        "url": "https://www.amazon.com/dp/B00DX86P5K"
     },
-    {
-        "asinList":"B0012TREK2",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B0012TREK2"
+    "B083XMM4P3": {
+        "brand": "UHU",
+        "url": "https://www.amazon.com/dp/B083XMM4P3"
     },
-    {
-        "asinList":"B06XNP8J4R",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B06XNP8J4R"
+    "B00DX88K2Q": {
+        "brand": "ChiaoGoo",
+        "url": "https://www.amazon.com/dp/B00DX88K2Q"
     },
-    {
-        "asinList":"B083XMM4P3",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B083XMM4P3"
+    "B0012TREK2": {
+        "brand": "Pro Taper",
+        "url": "https://www.amazon.com/dp/B0012TREK2"
     },
-    {
-        "asinList":"B09T6F7596",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B09T6F7596"
+    "B09T6F7596": {
+        "brand": "Melnor",
+        "url": "https://www.amazon.com/dp/B09T6F7596"
     },
-    {
-        "asinList":"B07VWRZN4L",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B07VWRZN4L"
+    "B079ZJVLZQ": {
+        "brand": "Tama",
+        "url": "https://www.amazon.com/dp/B079ZJVLZQ"
     },
-    {
-        "asinList":"B00DX88JGI",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B00DX88JGI"
+    "B006R62UZO": {
+        "brand": "Oasis",
+        "url": "https://www.amazon.com/dp/B006R62UZO"
     },
-    {
-        "asinList":"B001M5I27A",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B001M5I27A"
-    },
-    {
-        "asinList":"B01MTIXYKI",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B01MTIXYKI"
-    },
-    {
-        "asinList":"B006R62UZO",
-        "asinLink":"https:\/\/www.amazon.com\/dp\/B006R62UZO"
+    "B01MTIXYKI": {
+        "brand": "Benefit",
+        "url": "https://www.amazon.com/dp/B01MTIXYKI"
     }
-]
+}

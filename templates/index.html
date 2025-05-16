@@ -16,29 +16,23 @@
 
   {% if products %}
     <table>
-      <thead>
-        <tr>
-          {% for key in products[0].keys() %}
-            <th>{{ key }}</th>
-          {% endfor %}
-        </tr>
-      </thead>
-      <tbody>
-        {% for product in products %}
-          <tr>
-            {% for value in product.values() %}
-              <td>
-                {% if value is string and (value.startswith('http://') or value.startswith('https://')) %}
-                    <a href="{{ value }}" target="_blank">{{ value }}</a>
-                {% else %}
-                    {{ value }}
-                {% endif %}
-            </td>
-            {% endfor %}
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+  <thead>
+    <tr>
+      <th>ASIN</th>
+      <th>Brand</th>
+      <th>Amazon Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for asin, info in products.items() %}
+      <tr>
+        <td>{{ asin }}</td>
+        <td>{{ info.brand }}</td>
+        <td><a href="{{ info.url }}" target="_blank">View Product</a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
   {% else %}
     <p>No data available.</p>
   {% endif %}

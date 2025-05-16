@@ -2,11 +2,9 @@ import requests
 import urllib.parse
 import json
 import pandas as pd
-#import random
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import os
-from datetime import datetime
 
 class KeepaAPI():
     def __init__(self, api_key):
@@ -26,6 +24,7 @@ class KeepaAPI():
         else:
             print(f"Error: {response.status_code}")
             return None
+        
         
 class AsinParser():
     def __init__(self, api_key, url):
@@ -86,6 +85,10 @@ class AsinParser():
         filtered_asins = df[~df['asinLink'].progress_apply(self.is_brand_registered)]
 
         return filtered_asins
+    
+
+
+
     
 def run_request(keepa_api_key, query_parameters, scrapeops_api_key, scrapeops_url):
     keepa = KeepaAPI(keepa_api_key)
