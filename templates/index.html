@@ -19,7 +19,7 @@
   <thead>
     <tr>
       <th>ASIN</th>
-      <th>Brand</th>
+      <th>Manufacturer</th>
       <th>Amazon Link</th>
     </tr>
   </thead>
@@ -27,7 +27,7 @@
     {% for asin, info in products.items() %}
       <tr>
         <td>{{ asin }}</td>
-        <td>{{ info.brand }}</td>
+        <td>{{ info.manufacturer }}</td>
         <td><a href="{{ info.url }}" target="_blank">View Product</a></td>
       </tr>
     {% endfor %}

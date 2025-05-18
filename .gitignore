@@ -1,3 +1,6 @@
 .env
 venv/
-catched_results.json
+data/catched_results.json
+data/brands_results.json
+unused/
+__pycache__/
