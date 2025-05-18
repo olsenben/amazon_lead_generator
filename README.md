@@ -12,3 +12,6 @@ I use Keepa API to load a custom product query then use scrapeops to scrape the 
 
 ## Deployment
 Current implementation is a flask app. I plan to deploy it in the future for my VAs to use. 
+
+## To Run: 
+Set up by cloning the repo and running ```pip install -r requirements.txt``` in your virtual environment. Run app.py and navigate to the port specified in your terminal by opening it in your internet browswer. 
