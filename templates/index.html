@@ -13,6 +13,8 @@
   <a href="/refresh">
     <button>🔄 Refresh Data</button>
   </a>
+  <a href="{{ url_for('download_csv') }}" class="btn btn-success">Download CSV</a>
+
 
   {% if products %}
     <table>
