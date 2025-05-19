@@ -30,12 +30,14 @@ def get_min_products(keepa_api_key, query_parameters, min_products=15):
     query_parameters = query_parameters
     query_parameters['page'] = 1
     data = run_request(keepa_api_key, query_parameters)
-    while len(data.keys()) < min_products:
-        query_parameters['page'] += 1
-        more_data = run_request(keepa_api_key, query_parameters)
-        data.update(more_data)
-    
-    return data
+    if data: 
+        while len(data.keys()) < min_products:
+            query_parameters['page'] += 1
+            more_data = run_request(keepa_api_key, query_parameters)
+            data.update(more_data)
+        return data
+    else:
+        return "No data available!"
 
 def fetch_and_cache_data():
     """fetches products and the caches the results"""
