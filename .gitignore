@@ -1,6 +1,6 @@
 .env
 venv/
-data/catched_results.json
-data/brands_results.json
+data/cached_results.json
+data/brands_records.json
 unused/
 __pycache__/
